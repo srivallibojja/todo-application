@@ -1,0 +1,39 @@
+body{
+    background-color: #b33b72;
+}
+form{
+    width:400px;
+    margin:auto;
+    margin-top:200px;
+    background-color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    padding:25px;
+   
+}
+input[type="text"],
+input[type="password"]
+{
+    width:100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing:border-box;
+    resize:none;
+    font-size:1rem;
+    
+}
+.log
+{
+    text-align: center;
+}
+button{
+    padding:10px 15px;
+    font-weight: bold;
+    color: white;
+    margin-left:150px;
+    border-style:none;
+    border-radius: 5px;
+    background-color: darkblue;
+    margin-top: 15px;
+}
