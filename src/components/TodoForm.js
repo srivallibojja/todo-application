@@ -42,6 +42,7 @@ function TodoForm(props) {
         </div>
       ) : (
         <>
+        <div className='col col-sm-3 col-md-6 col-lg-8'>
           <input
             placeholder='Add a todo...'
             value={input}
@@ -53,7 +54,7 @@ function TodoForm(props) {
           <button onClick={handleSubmit} className='todo-button'>
             Add
           </button>
-
+        </div>
         
           
         </>
