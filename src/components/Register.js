@@ -50,8 +50,10 @@ function Register()
                 {/* phone number */}
                 <div className="mb-3">
                     <label htmlFor='phno'>Phone Number</label>
-                    <input type="number" id="phno"  className="form-control " {...register("phno",{required:true})}/>
-                    {errors.number?.type=='required' && <p className="text-danger">* This field is mandatory</p>}
+                    <input type="number" id="phno"  className="form-control " {...register("phno",{required:true,minLength:10,maxLength:10})}/>
+                    {errors.phno?.type=='required' && <p className="text-danger">* This field is mandatory</p>}
+                    {errors.phno?.type=='minLength' && <p className="text-danger">It should be 10 characters in length</p>}
+                    {errors.phno?.type=='maxLength' && <p className="text-danger">It should be 10 characters in length</p>}
                 </div>
                 {/* date of birth */}
                 <div className="mb-3">

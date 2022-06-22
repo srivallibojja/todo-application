@@ -42,9 +42,9 @@ function TodoList() {
   };
 
   return (
-    <div >
+    
       <>
-      <h1 className="heading ">Today's Todo List</h1>
+      <h1 class="heading ">Today's Todo List</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
@@ -53,7 +53,7 @@ function TodoList() {
         updateTodo={updateTodo}
       />
     </>
-    </div>
+      
     
   );
 }
