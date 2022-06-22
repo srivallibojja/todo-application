@@ -1,18 +1,15 @@
-body{
-    background-color: #b33b72;
-}
-form{
+
+.lform{
     width:400px;
     margin:auto;
     margin-top:200px;
-    background-color:white;
+    background-color:#b33b72;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300;
     padding:25px;
-   
+    color:white;
 }
-input[type="text"],
-input[type="password"]
+.ltext,.lpw
 {
     width:100%;
     margin-top: 15px;
@@ -27,7 +24,7 @@ input[type="password"]
 {
     text-align: center;
 }
-button{
+.lbutton{
     padding:10px 15px;
     font-weight: bold;
     color: white;

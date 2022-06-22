@@ -1,7 +1,5 @@
-body{
-    background-color:#ffd1c3;
-}
-form{
+
+.rform{
     width:400px;
     margin:auto;
     margin-top:70px;
@@ -9,13 +7,7 @@ form{
     color: white;
     padding:25px;
 }
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="date"],
-input[type="email"],
-input[type="file"]
-,select,textarea{
+.rtext{
     width:100%;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -24,10 +16,10 @@ input[type="file"]
     resize:none;
     font-size:1rem;
 }
-label{
+.rlab{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-button{
+.rbut{
     padding:10px 15px;
     font-weight: bold;
     color: white;

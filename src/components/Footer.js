@@ -1,51 +1,54 @@
 import './Footer.css'
+import {BsFacebook,BsTwitter,BsLinkedin,BsGithub,BsTelephoneFill} from 'react-icons/bs';
+import {MdLocationOn} from 'react-icons/md';
+import {HiMail} from 'react-icons/hi';
 
 function Footer()
 {
     return(
         <div>
-           <footer class="footer-distributed">
+           <footer className="footer-distributed">
 
-<div class="footer-left">
+<div className="footer-left">
 
     <h3>TODO LIST</h3>
 
-    <p class="footer-links">
-        <a href="#" class="link-1">Home</a>
+    <p className="footer-links">
+        <a href="http://localhost:3000/" className="link-1">Home</a>
         
-<a href="#">About</a>
+<a href="http://localhost:3000/about">About</a>
 
-        <a href="#">Sign Up</a>
+        <a href="http://localhost:3000/register">Sign Up</a>
         
-        <a href="#">Faq</a>
+        
         
         <a href="#">Contact</a>
     </p>
 
 </div>
 
-<div class="footer-center">
+<div className="footer-center">
 
     <div>
-        <i class="fa fa-map-marker"></i>
+        <MdLocationOn/>
         <p><span>Hyderabad</span></p>
     </div>
 
     <div>
-        <i class="fa fa-phone"></i>
+        <BsTelephoneFill/>
         <p>+91 123456789</p>
     </div>
 
     <div>
-        <i class="fa fa-envelope"></i>
+        <HiMail/>
         <p><a href="mailto:support@company.com">support@todolist.com</a></p>
     </div>
 
 </div>
 
-<div class="footer-right">
+<div className="footer-right">
 
-    <p class="footer-company-about">
+    <p className="footer-company-about">
         <span>About the company</span>
         Our website helps you list your to-do's 
 Stop Procrastinating
@@ -53,11 +56,18 @@ Use TODO LIST
     </p>
 
     <div class="footer-icons">
-
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
+    <div style={{margin:15}}>
+        <BsFacebook size={30}/>
+    </div>
+    <div style={{margin:15}}>
+        <BsTwitter size={30}/>
+    </div> 
+    <div style={{margin:15}}>
+        <BsLinkedin size={30}/>
+    </div> 
+    <div style={{margin:15}}>
+        <BsGithub size={30}/>
+    </div> 
 
     </div>
 

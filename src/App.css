@@ -1,130 +1,203 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+*{
+  font-family: Verdana;
 }
-
-body {
-  background: cornsilk;
+.active
+{
+	font-weight:bold;
 }
-.todo-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 200px;
-  min-height: 600px;
-  background: #d5c9c7;
+.responsive
+{
+	width:100%;
+	height:auto;
+}
+section {
+  width: 100%;
+  display: inline-block;
+  background: 	#FFC0CB;
+  height: 50vh;
   text-align: center;
-  margin: 128px auto;
-  border-radius: 10px;
-  padding-bottom: 32px;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
-h1 {
-  margin: 32px 0;
-  color: white;
-  font-size: 24px;
-  background-color: orangered;
-  padding: 10px;
-  
-  border-radius: 10px;
-  width:30%;
-  margin:auto;
-  text-align:center;
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
 }
 
-.complete {
-  text-decoration: line-through;
-  opacity: 0.4;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
 }
 
-.todo-form {
-  margin-bottom: 32px;
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
 }
 
-.todo-input {
-  padding: 14px 32px 14px 16px;
-  border-radius: 4px 0 0 4px;
-  border: 2px solid #233142;
-  outline: none;
-  width: 320px;
-  background: transparent;
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans';
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  	#FFC0CB;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
   color: #fff;
+  display: inline-block;
+  padding-right: 5px;
 }
 
-.todo-input::placeholder {
-  color: #e2e2e2;
+.footer-distributed .footer-links .link-1:before {
+  content: none;
 }
 
-.todo-button {
-  padding: 16px;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  outline: none;
-  background: #d62828;
-  color: #fff;
-  text-transform: capitalize;
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
 }
 
-.todo-input.edit {
-  border: 2px solid black;
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
 }
 
-.todo-button.edit {
-  background: #8b6508;
-  padding: 16px 22px;
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
-.todo-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
+.footer-distributed .footer-icons{
+	margin-top: 25px;
 }
 
-.todo-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4px auto;
-  color: #fff;
-  background: #800000;
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
 
-  padding: 16px;
-  border-radius: 5px;
-  width: 40%;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
 }
 
-.todo-row:nth-child(4n + 1) {
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
-}
+/* If you don't want the footer to be responsive, remove these media queries */
 
-.todo-row:nth-child(4n + 2) {
-  background:#f4456e;
-}
+@media (max-width: 880px) {
 
-.todo-row:nth-child(4n + 3) {
-  background: #4c005a;
-}
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
 
-.icons {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  cursor: pointer;
-}
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
 
-.delete-icon {
-  margin-right: 5px;
-  color: #fff;
-}
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
 
-.edit-icon {
-  color: #fff;
 }
