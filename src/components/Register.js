@@ -1,13 +1,28 @@
 import {useForm} from 'react-hook-form';
 import {useNavigate} from 'react-router-dom';
+import axios from 'axios';
 function Register()
 {
     const {register,handleSubmit,formState: {errors}} = useForm();
     const navigate=useNavigate();
     //form submission
-    const onFormSubmit = (userData) =>
+    const onFormSubmit = (userObj) =>
     {
-        console.log(userData)
+        //http post req
+        axios.post('http://localhost:5000/user-api/create-user',userObj)
+        .then(response=>{
+            alert(response.data.message);
+            //if user created
+            if(response.data.message==="New User created"){
+                //navigate to login
+                navigate("/login")
+            }
+            
+        })
+        .catch(error=>{
+            console.log(error)
+            alert("Something went wrong in creating user")
+        })
     }
     return(
        <div className='row '>
@@ -97,7 +112,7 @@ function Register()
                     {/* submit button */}
                     <div className="text-center">
                         <button type="submit" className="btn btn-info m-5 ">Register</button>
-                        <button type="submit" className="btn btn-secondary m-5 text-white">Cancel</button>
+                        
                     </div>
                     {/* Link to Login */}
                     <p className=" text-center"onClick={()=>navigate('/login')}><u>Already have an account?</u></p>

@@ -4,9 +4,9 @@ function Login()
 {
     const {register,handleSubmit,formState: {errors}} = useForm();
     //form submission
-    const onFormSubmit = (userData) =>
+    const onFormSubmit = (userCredentialsObject) =>
     {
-        console.log(userData)
+        console.log(userCredentialsObject)
     }
     return(
         <div className='row '>
