@@ -1,40 +1,19 @@
-
-.rform{
-    width:400px;
-    margin:auto;
-    margin-top:70px;
-    background-color:#010048;
-    color: white;
-    padding:25px;
+.forms{
+    background-color: rgba(0, 0, 0, 0.352);
+    color: aliceblue;
+    font-size: large;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
-.rtext{
-    width:100%;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    border-radius: 5px;
-    box-sizing:border-box;
-    resize:none;
-    font-size:1rem;
+.headers{
+    color: aliceblue;
+    font-size: 10vh;
+    font-family: 'Monda', sans-serif;
 }
-.rlab{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.buton{
+    margin-left:26vh;
 }
-.rbut{
-    padding:10px 15px;
-    font-weight: bold;
-    color: white;
-    margin-left:60px;
-    border-style:none;
-    border-radius: 5px;
-}
-.sup
-{
-    font-size:2rem;
-    margin-bottom: 15px;
-}
-.first{
-    background-color: darkblue;
-}
-.sec{
-    background-color: grey;
+.h1-e{
+    font-size: 15px;
+    margin-top: 9px;
+    margin-left: 200px;
 }

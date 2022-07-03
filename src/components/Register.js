@@ -1,5 +1,5 @@
 import {useForm} from 'react-hook-form';
-import {useNavigate} from 'react-router-dom';
+import {Link,useNavigate} from 'react-router-dom';
 import axios from 'axios';
 function Register()
 {
@@ -115,7 +115,7 @@ function Register()
                         
                     </div>
                     {/* Link to Login */}
-                    <p className=" text-center"onClick={()=>navigate('/login')}><u>Already have an account?</u></p>
+                    <h1 className="h1-e"><Link to={{pathname : '/login'}}>Already have an account?</Link></h1>
 
                 </div>
             </form>

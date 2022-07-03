@@ -1,36 +1,29 @@
-
-.lform{
-    width:400px;
-    margin:auto;
-    margin-top:200px;
-    background-color:#b33b72;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 300;
-    padding:25px;
-    color:white;
-}
-.ltext,.lpw
-{
-    width:100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    box-sizing:border-box;
-    resize:none;
-    font-size:1rem;
-    
-}
-.log
-{
-    text-align: center;
-}
-.lbutton{
-    padding:10px 15px;
-    font-weight: bold;
+.header{
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: 'Monda', sans-serif;
     color: white;
-    margin-left:150px;
-    border-style:none;
-    border-radius: 5px;
-    background-color: darkblue;
-    margin-top: 15px;
+}
+.wraper{
+    background-color: #FF69B4;
+    color: white;
+    font-size: large;
+    width: 80vh;
+    height:60vh;
+    margin: auto;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-top: 2vh;
+}
+.buton2{
+    margin-left: 20vh;
+}
+.h1-a{
+    font-size: medium;
+    margin-top: 9px;
+    margin-left: 230px;
+}
+.h1-e{
+    font-size: medium;
+    margin-top: 9px;
+    margin-left: 150px;
 }

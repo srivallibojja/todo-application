@@ -1,25 +1,27 @@
+import Header from "./components/Header/Header"
+import Home from "./components/Home"
+import Register from "./components/Register"
+import Login from "./components/Login";
+import Homepage from "./components/Homepage";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
-import Navbar from './components/Navbar'
-import Footer from './components/Footer';
-
-
-import './App.css';
-
-
-
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
 function App() {
   return (
-    <>
-    <div >
-      <Navbar/>
+    <div>
+      <Header />
+      <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/aboutus" element={<About />} />
+                <Route path="/" element={<Homepage/>}/>
+        </Routes>
+        <Footer/>
     </div>
-    <div >
-      <Footer/>
-    </div>
-    </>
-    
-    
-  );
+  )
 }
 
-export default App;
+export default App
