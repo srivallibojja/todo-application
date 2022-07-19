@@ -42,7 +42,7 @@ function Header(){
               <Nav.Link as={NavLink}  to="/">HOME</Nav.Link>
               <Nav.Link as={NavLink}  to="aboutus">ABOUT US</Nav.Link>
               <Nav.Link as={NavLink}  to="register">REGISTER</Nav.Link>
-              <Nav.Link as={NavLink}   to="contactus">CONTACT US</Nav.Link>
+              <Nav.Link as={NavLink}   to="contact">CONTACT US</Nav.Link>
             </Nav>
             
             {isSuccess !== true ? (
